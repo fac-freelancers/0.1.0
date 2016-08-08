@@ -1,0 +1,21 @@
+{
+  "name": "0.1.0",
+  "version": "1.0.0",
+  "description": "Version 0.1.0 of the app",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --server --files '(css/*.css|js/*.js|index.html)'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fac-freelancers/0.1.0.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fac-freelancers/0.1.0/issues"
+  },
+  "homepage": "https://github.com/fac-freelancers/0.1.0#readme"
+}
