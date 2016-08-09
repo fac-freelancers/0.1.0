@@ -55,6 +55,7 @@ nav {
 
 .carousel.carousel-portfolio {
   height: 100vh;
+  bottom: 0;
 }
 
 .carousel .carousel-item .carousel-item-image {
@@ -65,8 +66,14 @@ nav {
 }
 
 .carousel .carousel-item-description {
+  background: -webkit-linear-gradient(transparent, rgba(255,255,255, 0.5) 25%, white);
+  background: linear-gradient(transparent, rgba(255,255,255, 0.5) 25%, white);
+
   display: block;
+  position: absolute;
+  bottom: 0;
   width: 100%;
+  overflow: visible;;
 }
 
 
@@ -133,12 +140,22 @@ nav {
     }
 
     .carousel .carousel-item-description {
+      background: transparent;
       display: inline-block;
       position: absolute;
       margin: 0;
       top: 0;
       right: 1em;
       width: 420px;
+      overflow: hidden;
+    }
+
+    li.indicator-item {
+      background-color: red !important;
+    }
+
+    li.indicator-item.active {
+      background-color: yellow !important;
     }
 
 }
@@ -153,6 +170,22 @@ nav {
         font-size: 1.3em;
     }
 
+}
+
+@media only screen and (max-width: 450px) {
+
+    .col.l12.m12.s12.logo-section {
+        padding: 0px 20px;
+    }
+
+    .logo-section-left, .logo-section-right {
+        font-size: 1.3em;
+    }
+
+    .carousel .carousel-item .crop-carousel-item-image {
+      overflow: hidden;
+      height: 350px;
+    }
 }
 
 @media only screen and (min-width: 928px) {
